@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="frames_data.js"></script>
+    <script src="data.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Compare Frames</title>
+    <style>
+        .nav ul{
+            margin-right:12.5%;
+        }
+    </style> 
+</head>
+<body>
+    <!--navbar/menu-->    
+    <nav class="nav">
+        <ul id="navigation">
+            <li class="nav-item search">
+                <label for="search"><img src="images/icons8_search_16.png" alt=""></label>
+                <input type="search" id="search" placeholder="Search product">
+                <div class="search_box">
+                    
+                </div>
+            </li>
+            <li class="nav-item  link"><a class="active" href="index.html">HOME</a></li>
+            <li class="nav-item link"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">FRAMES</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:50%;">
+                    <li>
+                        <div>Frames of all fits, sizes, and styles! Your perfect fit is just a click away.<a class="dropdown-link" href="frames.html">View more...</a></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">LENS</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:60%;">
+                    <li>
+                        <div>Find lens of different categories. Prescription is readily available for all brands and types. <span><a class="dropdown-link" href="lens.html">View more...</a></span></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item link"><a href="contactus.html">CONTACT US</a></li>
+            <li class="nav-item login"><a href="login.html" title="Login"><img src="images/icons8_user_16.png" alt=""></a>
+            </li>
+        </ul>       
+            
+    </nav>
+
+
+    <!--compare header-->
+    <section id="compare_header">
+        <h1>Compare
+            <select name="type" id="prodtype" onchange="types(this.selectedIndex)" >
+                <option value="0" selected>All</option>
+                <option value="1">Rimless</option>
+                <option value="2">Sunglasses</option>
+                <option value="3">Glasses</option>
+                <option value="4">Goggles</option>
+            </select>
+            e̷y̷e̷o̷n̷i̷c̷   Frames
+        </h1>
+    </section>
+
+
+    <!--compare table-->
+    <table cellspacing="0"  cellpadding="25%">
+        <tr style="background: rgb(226, 224, 224);" border-collapse="separate">
+            <th>Select Product</th>
+            <th>
+                <select name="form-control" id="select1" onchange="item1(this.value)" >
+                    <option value="0">--Select product--</option>
+                </select>
+            </th>
+            <th>
+                <select name="form-control" id="select2" onchange="item2(this.value)">
+                    <option value="0">--Select product--</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th>Product image</th>
+            <td><div class="image"><img src="images/placeholder-image(1).png" id="img_1"/></div></td>
+            <td><div class="image"><img src="images/placeholder-image(1).png" id="img_2"/></div></td>
+        </tr>
+        <tr>
+            <th>Product price</th>
+            <td id="price1"></td>
+            <td id="price2"></td>
+        </tr>
+        <tr>
+            <th>Product description</th>
+            <td id="description1"></td>
+            <td id="description2"></td>
+        </tr>
+        <tr>
+            <th>Product fabric type</th>
+            <td id="type1"></td>
+            <td id="type2"></td>
+        </tr>
+        <tr>
+            <th>Product brand</th>
+            <td id="brand1"></td>
+            <td id="brand2"></td>
+        </tr>
+        <tr>
+            <th>Product colours</th>
+            <td id="colour1"></td>
+            <td id="colour2"></td>
+        </tr>
+    </table>
+    
+</body>
+
+
+
+<!--populate the select option with respect to filter-->
+<script>
+    
+    
+    for (var i = 1; i<framesdata.length;i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+            }
+    
+
+
+
+
+    function types(b){
+        document.getElementById("img_1").src = framesdata[0].image;
+            document.getElementById("price1").innerHTML = "--";
+            document.getElementById("description1").innerHTML = "--";
+            document.getElementById("type1").innerHTML = "--";
+            document.getElementById("brand1").innerHTML = "--";
+            document.getElementById("colour1").innerHTML = "--";
+
+            document.getElementById("img_2").src = framesdata[0].image;
+            document.getElementById("price2").innerHTML = "--";
+            document.getElementById("description2").innerHTML = "--";
+            document.getElementById("type2").innerHTML = "--";
+            document.getElementById("brand2").innerHTML = "--";
+            document.getElementById("colour2").innerHTML = "--";
+        if(b == "0"){
+            document.getElementById("select1").options.length = 1;
+            document.getElementById("select2").options.length = 1;
+            for (var i = 1; i<framesdata.length;i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+            }
+        }
+
+
+
+
+        if(b == "1"){
+            document.getElementById("select1").options.length = 1;
+            document.getElementById("select2").options.length = 1;
+            for (var i = 1; i<rimless_frame_data.length;i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${rimless_frame_data[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${rimless_frame_data[i].name}</option>
+                `;
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        else if (b == "2"){
+            document.getElementById("select1").options.length = 1;
+            document.getElementById("select2").options.length = 1;
+            for (var i = 13; i<(13 + sunglasses_frames_data.length);i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        else if(b == "3"){
+            document.getElementById("select1").options.length = 1;
+            document.getElementById("select2").options.length = 1;
+            for (var i = 33; i<(33 + glasses_frames_data.length);i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+            }
+           
+        }else if(b == "4"){
+            document.getElementById("select1").options.length = 1;
+            document.getElementById("select2").options.length = 1;
+            for (var i = 45; i<(45 + goggles_frames_data.length);i++){
+                document.getElementById("select1").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+
+                document.getElementById("select2").innerHTML +=`
+                    <option value="${i}">${framesdata[i].name}</option>
+                `;
+            }
+            
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    //call the product details to table 
+    function item1(a){
+        var select2val = document.getElementById("select2").value;
+        if(a != select2val){
+            document.getElementById("img_1").src = framesdata[a].image;
+            document.getElementById("price1").innerHTML = "$" + framesdata[a].price;
+            document.getElementById("description1").innerHTML = framesdata[a].description;
+            document.getElementById("type1").innerHTML = framesdata[a].fabric_type;
+            document.getElementById("brand1").innerHTML = framesdata[a].brand;
+            document.getElementById("colour1").innerHTML = framesdata[a].colors.join(", ");
+            document.getElementById("url1").href = framesdata1[a+1].detail;
+                   
+        }
+        else{
+            document.getElementById("select1").selectedIndex = 0;
+            document.getElementById("img_1").src = framesdata[0].image;
+            document.getElementById("price1").innerHTML = "--";
+            document.getElementById("description1").innerHTML = "--";
+            document.getElementById("type1").innerHTML = "--";
+            document.getElementById("brand1").innerHTML = "--";
+            document.getElementById("colour1").innerHTML = "--";
+            alert("Please select a different product");
+        }
+    }
+    function item2(a){
+        var select1val = document.getElementById("select1").value;
+        if(a != select1val){
+            document.getElementById("img_2").src = framesdata[a].image;
+            document.getElementById("price2").innerHTML = "$" + framesdata[a].price;
+            document.getElementById("description2").innerHTML = framesdata[a].description;
+            document.getElementById("type2").innerHTML = framesdata[a].fabric_type;
+            document.getElementById("brand2").innerHTML = framesdata[a].brand;
+            document.getElementById("colour2").innerHTML = framesdata[a].colors.join(", ");   
+            document.getElementById("url2").href = framesdata1[a+1].detail;
+        }
+        else{
+            document.getElementById("select2").selectedIndex = 0;
+            document.getElementById("img_2").src = framesdata[0].image;
+            document.getElementById("price2").innerHTML = "--";
+            document.getElementById("description2").innerHTML = "--";
+            document.getElementById("type2").innerHTML = "--";
+            document.getElementById("brand2").innerHTML = "--";
+            document.getElementById("colour2").innerHTML = "--";
+            alert("Please select a different product");
+        }
+    }
+</script>
+</html>

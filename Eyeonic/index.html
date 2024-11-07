@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Eyeonic</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="checkbtn"><img src="images/icons8_Menu.ico" alt=""></label>
+        <label class="logo"><a href="aboutus.html">e̷y̷e̷o̷n̷i̷c̷</a></label>
+        <ul id="navigation">
+            <li class="nav-item  link"><a class="active" href="index.html">HOME</a></li>
+            <li class="nav-item link"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">FRAMES</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:60%;">
+                    <li>
+                        <div>Frames of all fits, sizes, and styles! Your perfect fit is just a click away.<a class="dropdown-link" href="frames.html">View more...</a></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">LENS</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:70%;">
+                    <li>
+                        <div>Find lens of different categories. Prescription is readily available for all brands and types. <span><a class="dropdown-link" href="lens.html">View more...</a></span></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item link"><a href="contactus.html">CONTACT US</a></li>
+            
+        </ul>       
+             
+    </nav>
+     
+    <!--image carousel-->
+    <section aria-label="Carousel" id="image" class="carousel">
+        <div class="carousel" data-carousel>
+            <button class="carousel-nav prev" data-carousel-nav="prev">&#8249;</button>
+            <button class="carousel-nav next" data-carousel-nav="next">&#8250;</button>
+            <ul data-items>
+                <li class="carousel-item" id="img" data-active>
+                    <div>
+                        <img src="images/eye7-removebg-preview.png" alt="" width="600px">
+                    </div> 
+                    <div id="txt">
+                        <div id="text">
+                            <small style="line-height: 32px;">GET LATEST DISCOUNTS</small>
+                        <h1>Find Your Fit<br><span>Latest Collection</span></h1>
+                        <a class="btn" href="frames.html" style="font-weight:bold;">SHOP NOW</a>
+                        </div>
+                        
+                    </div> 
+                </li>
+                <li class="carousel-item" id="img1">
+                    <div>
+                        <img src="images/her1-removebg-preview.png" alt="" width="600px">
+                    </div>
+                    <div id="txt">
+                        <div id="text">
+                            <small style="line-height: 32px;">GET LATEST DISCOUNTS</small>
+                        <h1>More Colour<br><span>More Life</span></h1>
+                        <a class="btn" href="frames.html" style="font-weight:bold;">SHOP NOW</a>
+                        </div>
+                        
+                    </div>
+                </li>      
+                <li class="carousel-item" id="img2">
+                    <div>
+                        <img src="images/4441-removebg-preview.png" alt="" width="570px">
+                    </div>
+                    <div id="txt">
+                        <div id="text">
+                            <small style="line-height: 32px;">GET LATEST DISCOUNTS</small>
+                        <h1>Affordable Deals<br><span>Rimless Collection</span></h1>
+                        <a class="btn" href="frames.html" style="font-weight:bold;">SHOP NOW</a>
+                        </div>
+                        
+                    </div>                   
+                    
+                </li>                
+            </ul>  
+        </div>              
+    </section>
+    <!--features-->
+    <div class="grid-features">
+        <div style="border-right:.2px solid rgba(193, 193, 193, 0.753);"><img src="images/icons8_headphones(1)_32.png" alt=""><p>Online Support</p></div>
+        <div style="border-right:.2px solid rgba(193, 193, 193, 0.753);"><img src="images/icons8_gift(2)_32.png" alt=""><p>Gift Voucher</p></div>
+        <div><img src="images/icons8_online_store_32.png" alt=""><p>Pick Up in Store</p></div>
+    </div>
+    
+    <!--frames section-->
+    <div class="grid-header">
+        <h1>FRAMES</h1>
+    </div>
+    <div><p style="text-align:center; margin:30px 90px;">Explore our collections of frames and compare features! Get affordable deals on some of our frames! Feel free to explore our extensive collections of frames from rimless to goggles. Check out the product details.</p></div>
+    <div class="grid-container">
+        
+        <div id="rimless">
+            <img src="images/frame7-removebg-preview.png"><a href="frames.html/#rimlesscontent" class="btn nohover">Rimless</a>
+        </div>
+        <div id="sunglasses">
+            <img src="images/rimless_blue_1_-removebg-preview.png" alt=""><a href="" class="btn">Sunglasses</a>
+        </div>
+        <div id="glasses">
+            <img src="images/eyeglasses-removebg-preview.png" alt=""><a href="" class="btn" >Glasses</a>
+        </div>
+        <div id="goggles">
+            <img src="images/frames11-removebg-preview(1).png" alt=""><a href="" class="btn" >Goggles</a>
+        </div>
+        
+    </div>
+    
+         
+    <!--lens section-->
+    <div class="grid-header" style="margin-top: 30px;">
+        <h1>LENSES</h1>
+    </div>  
+    <div><p style="text-align:center; margin:30px 90px;">Explore our collections of lenses and compare features! Get affordable deals on some of our authentic prescription lens! Feel free to explore our extensive collections of lenses from blue filter to contacts. Check out the product details.</p></div>
+    <div class="grid-container">
+        <div id="rimless">
+            <img src="images/bluelens_1_-removebg-preview.png" alt=""><a href="" class="btn">Blue filter</a>
+        </div>
+        <div id="sunglasses">
+            <img src="images/chromance-lenses-removebg-preview.png" alt=""><a href="" class="btn">Chromance</a>
+        </div>
+        <div id="glasses">
+            <img src="images/contacts-removebg-preview.png" alt=""><a href="" class="btn">Contacts</a>
+        </div>
+        <div id="goggles">
+            <img src="images/polarized-lenses-removebg-preview.png" alt=""><a href="" class="btn">Polarised</a>
+        </div> 
+    </div>
+    
+    <!--special offers-->
+    <div class="grid-container-offers">
+        <div class="background" style="background-image:url('images/swiimming.jpg');">
+            
+        </div>
+        <div id="median" style="background-color:#ecd8b3;">
+            
+            <div id="mtext">
+                <small style="line-height: 12px;">GET EXTRA DISCOUNTS</small>
+            <h1>Rimless Glasses<br><span>Latest Collection</span></h1>
+            <a class="btn" href="" style="font-weight:bold;">SHOP NOW</a>
+            </div> 
+            
+        </div>
+        <div class="background" style="background-image:url('images/ppl2(1).jpg')"></div>
+    </div>
+
+
+
+
+    
+
+
+    <!--brands-->
+    <div id="brands">
+        <div class="background" style="background-image:url('images/acuvue-logo.png')"></div>
+        <div class="background" style="background-image:url('images/gucci-logo-black-and-white-1.png')"></div>
+        <div class="background" style="background-image:url('images/ray-ban-logo-png-transparent.png')"></div>
+        <div class="background" style="background-image:url('images/balenciaga1-removebg-preview.png')"></div>
+        <div class="background" style="background-image:url('images/png-transparent-bottega-veneta-hd-logo-removebg-preview.png')"></div>
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <section style="background-color:#000;">
+    <div class="footer">
+        <div>
+            <h1 style="line-height: 12px;">Contact Us</h1>
+            <p style="margin-right:30px;">507-Utc, Near Apple Hospital, Udhna Darwaja, Ring Road, Surat, India, 395002
+                Demo@Exampledemo.Com
+                (+00) 123 456 789</p>
+        </div>
+        <div>
+            <h1 style="line-height: 12px;">Links</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="frames.html">Frames</a></li>
+                <li><a href="">Lens</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="line-height: 12px;">Brands</h1>
+            <ul>
+                <li>Acuvue</li>
+                <li>Gucci</li>
+                <li>Rayban</li>
+                <li>Balenciaga</li>
+                <li>Bottege Veneta</li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="line-height: 12px;">Follow Us</h1>
+            <ul id="logo">
+                <li><img src="images/icons8_facebook.ico" alt=""></li>
+                <li><img src="images/icons8_instagram_old.ico" alt=""></li>
+                <li><img src="images/icons8_twitter.ico" alt=""></li>
+            </ul>
+        </div>
+        
+    </div>
+    </section>
+</body>
+</html>

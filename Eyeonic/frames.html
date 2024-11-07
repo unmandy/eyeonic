@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frames</title>
+    <script src="data.js" defer></script>
+    <style>
+        .nav ul{
+            margin-right:12.5%;
+        }
+    </style>  
+</head>
+<body>
+    
+    <!--navbar/menu-->    
+    <nav class="nav">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="checkbtn"><img src="images/icons8_Menu.ico" alt=""></label>
+        <ul id="navigation">
+            <li class="nav-item search">
+                <label for="search"><img src="images/icons8_search_16.png" alt=""></label>
+                <input type="search" id="search" placeholder="Search product">
+                <div class="search_box">
+                    
+                </div>
+            </li>
+            <li class="nav-item  link"><a class="active" href="index.html">HOME</a></li>
+            <li class="nav-item link"><a href="aboutus.html">ABOUT US</a></li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">FRAMES</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:50%;">
+                    <li>
+                        <div>Frames of all fits, sizes, and styles! Your perfect fit is just a click away.<a class="dropdown-link" href="frames.html">View more...</a></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><div class="dropdown"><span class="dropdown-text">LENS</span><div class="caret"></div></div>
+                <ul class="dropdown-item" style="left:60%;">
+                    <li>
+                        <div>Find lens of different categories. Prescription is readily available for all brands and types. <span><a class="dropdown-link" href="lens.html">View more...</a></span></div>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item link"><a href="contactus.html">CONTACT US</a></li>
+            <li class="nav-item login"><a href="login.html" title="Login"><img src="images/icons8_user_16.png" alt=""></a>
+            </li>
+        </ul>       
+            
+    </nav>
+
+
+
+
+
+
+
+    <!--banner-->
+    <div class="banner" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url('images/banner(2).jpg')">
+        <p>e̷y̷e̷o̷n̷i̷c̷ Frames</p>
+    </div>
+
+
+
+    <!--filters-->
+    <p>Filter By:</p>
+    <p><a href="product_compare.html">Compare Frames</a></p>
+    <div class="filters tabs">
+        <input type="radio" class="tab-radio" name="filter" id="filtercat" checked>
+        <label for="filtercat" class="buttons" style="margin:1.5em 0em 1em 3.0em;">Categories</label>
+        <!--products section-->
+        <section class="tab-content frames-section">
+            <div class="tabs">
+
+
+                <!--RIMLESS TAB-->
+                <input type="radio" class="tab-radio" name="tab" id="rimless">
+                <label for="rimless" class="tab-label">Rimless</label>
+                <div class="tab-content grid-frames" id="rimlesscontent">
+                    <!--first row for rimless-->
+                    <div class="products" data-item="balenciaga">
+                        <div style="background-image:url('images/Balenciaga/roundrimless_1_-removebg-preview.png')" class="imgitem"></div>
+                        <p>1 COLOR</p>                    
+                    </div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/rimlessmetal_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/rimlessacu_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/goldrimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><input type="checkbox" class="check1" id="rrimdeets"><label for="rrimdeets">Round rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><input type="checkbox" class="check1" id="rimmetdeets"><label for="rimmetdeets">Rimless metal</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="rimdeets"><label for="rimdeets">Rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="goldrimdeets"><label for="goldrimdeets">Gold rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$102</span></small></p></div>
+
+                    <!--second row for rimless-->
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/ovalrimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/goldhalfrimrect_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div  class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/rimlesssqu_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/rectanglerimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><input type="checkbox" class="check1" id="ovalrimdeets"><label for="ovalrimdeets">Oval rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="ghrimdeets"><label for="ghrimdeets">Gold half-rim rectangle</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><input type="checkbox" name="frames" class="check1" id="deets"><label for="deets">Square rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21139&amp;authkey=!AJEk24rBF8jh8A0&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="rectrimdeets"><label for="rectrimdeets">Rectangle rimless</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$120</span></small></p></div>
+
+                    <!--third row for rimless-->
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/rimless__1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega">
+                        <div class="imgitem" style="background-image:url('images/Bottega/silvertrinity_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="gucci"><div  class="imgitem" style="background-image:url('images/Gucci/rimlessrect_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/half-rimaviatormetal-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><input type="checkbox" class="check1" id="rimrectdeets"><label for="rimrectdeets">Rimless rectangle</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><input type="checkbox" class="check1" id="siltrideets"><label for="siltrideets">Silver trinity</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="rimrect1deets"><label for="rimrect1deets">Rimless rectangle</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$660</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="hrimavideets"><label for="hrimavideets">Half-rim aviator</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$58</span></small></p></div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--SUNGLASSES TAB-->
+                <input type="radio" class="tab-radio" name="tab" id="sunglasses" checked>
+                <label for="sunglasses" class="tab-label">Sunglasses</label>
+                <div class="tab-content grid-frames" id="sunglassescontent">
+                    <!--first row for sunglasses-->
+                    <div class="products" data-item="acuvue">
+                        <div class="product_carousel">
+                            <input type="radio" class="product1" name="product" id="i1" checked>
+                            <div class="product_carousel_item product_carousel_item-selected" style="background-image:url('images/Acuvue/bondmetalaviatorgold_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product1" name="product" id="i2">
+                            <div class="product_carousel_item" style="background-image:url('images/Acuvue/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product1" name="product" id="i3">
+                            <div class="product_carousel_item" style="background-image:url('images/Acuvue/brown_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="i1" style="background-color:#fae98f;"></label>                            
+                                <label for="i2" style="background-color:#000000;"></label>                            
+                                <label for="i3" style="background-color:rgb(46, 10, 10);"></label>
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>                    
+                    </div>
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/dynasty_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/acetatesqusunglasses_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/geometricsunglasses_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="bondmetaldeets"><label for="bondmetaldeets">Bond metal aviator</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><input type="checkbox" class="check1" id="sildyndeets"><label for="sildyndeets">Silver dynasty</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><input type="checkbox" class="check1" id="acesqudeets"><label for="acesqudeets">Acetate square</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="geodeets"><label for="geodeets">Geometric</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$102</span></small></p></div>
+
+                    <!--second row-->
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/havanaontransparentbrowntortoise_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="products" id="it1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/angleacetatepointedcateye_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products" id="it2">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products" id="it3">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/brown_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products" id="it4">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/havana_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="it1" style="background-color:#e4b20d;"></label>                            
+                                <label for="it2" style="background-color:#000000;"></label>                            
+                                <label for="it3" style="background-color:rgb(46, 10, 10);"></label>
+                                <label for="it4" style="background-image:linear-gradient(180deg,rgb(46, 10, 10),#fae98f);"></label>
+                            </div>
+                        </div>
+                        <p>4 COLORS</p>
+                    </div>
+                    <div  class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/diamondgeometric_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicaviator_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><input type="checkbox" class="check1" id="havtordeets"><label for="havtordeets">Havana tortoise</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><input type="checkbox" class="check1" id="acecatdeets"><label for="acecatdeets">Acetate pointed cat-eye</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="diageodeets"><label for="diageodeets">Diamond geometric</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="claavydeets"><label for="clavydeets">Classic aviator</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$120</span></small></p></div>
+
+                    <!--third row-->
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicavy_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="product1" id="ite1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/hourglasssunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="product1" id="ite2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/white_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="ite1" style="background-color:#000000;"></label>                            
+                                <label for="ite2" style="background-color:#ffffff;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/clubmasterclassic_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="products1" id="item1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Gucci/blackacetatesqu_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products1" id="item2">
+                            <div class="product_carousel_item" style="background-image:url('images/Gucci/squareframe_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="item1" style="background-color:#000000;"></label>                            
+                                <label for="item2" style="background-color:#e9cca4;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Half-rim classic aviator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Hourglass</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Clubmaster classic</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Acetate square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+
+                    <!--fourth row-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/classicwraparound_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="products2" id="item_1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/monocat2.0sunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products2" id="item_2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/monocat2.0_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="item_1" style="background-color:#000000;"></label>                            
+                                <label for="item_2" style="background-color:#ffffff;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicmetalsqu_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="products4" id="item__1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/red-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products4" id="item__2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/silverrect_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products4" id="item__3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products4" id="item__4">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/spikerectsunglasses_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="item__1" style="background-color:red;"></label>                            
+                                <label for="item__2" style="background-color:silver;"></label>                    <label for="item__3" style="background-color:#000000;"></label>                            
+                                <label for="item__4" style="background-color:rgb(255, 153, 0);"></label>                      
+                                
+                            </div>
+                        </div>
+                        <p>4 COLORS</p>
+                    </div>
+                
+                    <!--fourth row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Classic wraparound</a><span class="tooltipText">Click to download product details</span><br><span class="price">$2155</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Monocat 2.0</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$790</span>  <span class="newprice">$720</span> <span class="discount">$70 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Classic metal square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$133</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Spiked rectangle</a><span class="tooltipText">Click to download product details</span><br><span class="price">$1025</span></small></p></div>
+
+                    <!--fifth row-->
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/pearl-embellisheddetail_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products">
+                        <div class="product_carousel" data-item="balenciaga">
+                            <input type="radio" class="product2" name="products5" id="item___1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/skinxxlcatsunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products5" id="item___2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/blackxxlcat_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products5" id="item___3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/silverxxl_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="item___1" style="background-color:rgb(255, 133, 153);"></label>                            
+                                <label for="item___2" style="background-color:#000;"></label>                    <label for="item___3" style="background-color:silver;"></label>                            
+                                            
+                                
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>
+                    </div>
+                    <div class="products" data-item="bottega">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="products6" id="items___1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/green_1_-removebg-preview.png');"></div> 
+                            <input type="radio" class="product2" name="products6" id="items___2">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/turncateyegreyruthenium_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="products6" id="items___3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/gold_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="items___1" style="background-color:green;"></label>                            
+                                <label for="items___2" style="background-color:grey;"></label>                    <label for="items___3" style="background-color:rgb(220, 200, 151);"></label>                            
+                                            
+                                
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>
+                    </div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/montaignesquare_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+
+                    <!--fifth row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Round pearl-embellished detail</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$2,500</span>  <span class="newprice">$2,250</span> <span class="discount">10% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Skin xxl cat</a><span class="tooltipText">Click to download product details</span><br><span class="price">$100</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Turn cat-eye</a><span class="tooltipText">Click to download product details</span><br><span class="price">$235</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">30Montaigne square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$790</span></small></p></div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!--GLASSES SECTION-->
+                <input type="radio" class="tab-radio" name="tab" id="glasses">
+                <label for="glasses" class="tab-label">Glasses</label>
+                <div class="tab-content grid-frames">
+                    <!--first row of glasses-->
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="glassesproduct" id="glassesi1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/blackgeo_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="glassesproduct" id="glassesi2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/oversizedgeometricframe_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="glassesi1" style="background-color:#000000;"></label>                            
+                                <label for="glassesi2" style="background-color:#ab2020;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>                    
+                    </div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/logoplaque_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/horsebit_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/irisoptics_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><input type="checkbox" class="check1" id="overgeodeets"><label for="overgeodeets">Oversized geometric</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="logopdeets"><label for="logopdeets">Logo plaqued</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="horsebitdeets"><label for="horsebitdeets">Horsebit</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Iris optical</a><span class="tooltipText">Click to download product details</span><br><span class="price">$102</span></small></p></div>
+
+                    <!--second row of glasses-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/tortoiseshellroundframe_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban">
+                        <div class="imgitem" style="background-image:url('images/Rayban/square19712_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div  class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/BBlogocateye_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/pilotframe_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Round tortoise-shell</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Square 1972</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">BB logo cat-eye</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Pilot</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+
+                    <!--third row of glasses-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/logo-plaquearm_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="glassesproduct1" id="glassesite1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/redgeo_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="glassesproduct1" id="glassesite2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/yellowgeo_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="glassesite1" style="background-color:#c72020;"></label>                            
+                                <label for="glassesite2" style="background-color:#edcb34;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/slimsquare_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="imgitem" style="background-image:url('images/Balenciaga/geo_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Logo plaque-arm</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Geometric</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Slimsquare</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Curved geometric</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+
+                    
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--GOGGLES SECTION-->            
+                <input type="radio" class="tab-radio" name="tab" id="goggles">
+                <label for="goggles" class="tab-label">Goggles</label>
+                <div class="tab-content grid-frames">
+                    <!--first row of goggles-->
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/cobaltgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="gogglesproduct" id="gogglesi1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/huuborangegoggles_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="gogglesproduct" id="gogglesi2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/thomaslurzgoggles_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="gogglesi1" style="background-color:#de320f;"></label>                            
+                                <label for="gogglesi2" style="background-color:#69a4be;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>                    
+                    </div>
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/ambermirrorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/podium-titanium-goggle-biofuse_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><input type="checkbox" class="check1" id="cob1deets"><label for="cob1deets">Cobalt R1</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><input type="checkbox" class="check1" id="lurzdeets"><label for="lurzdeets">Lurz goggles</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><input type="checkbox" class="check1" id="amberdeets"><label for="amberdeets">Amber mirror</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><input type="checkbox" class="check1" id="biotdeets"><label for="biotdeets">Biofuse titanium</label><iframe src="https://onedrive.live.com/embed?resid=87CA0B21D3FA6475%21145&amp;authkey=!ANZsNvPGGJd99cI&amp;em=2" frameborder="0"></iframe><span class="tooltipText">Click to view product details</span><br><span class="price">$102</span></small></p></div>
+
+                    <!--second row of glasses-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/HUUB_Altairgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban">
+                        <div class="imgitem" style="background-image:url('images/Rayban/vermillionmirrorgoggles_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/cobaltmirrorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/lightambergoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Altair goggles</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Vermillion mirror</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Cobalt mirror</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Light amber</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+
+                    <!--third row of glasses-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/Zoggs_Predatorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue">
+                        <div class="imgitem" style="background-image:url('images/Acuvue/sparkgoggles_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/Zone_Vapourgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/F1_COBALT_MIRROR_1600_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Predator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Spark</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Vapour</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">F1 Cobalt mirror</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+                </div>
+            </div>
+        </section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <input type="radio" class="tab-radio" name="filter" id="filterbrand">
+        <label for="filterbrand" class="buttons" style="margin:1.5em 0em 1em 1.0em;">Brands</label>
+        <!--products section-->
+        <section class="tab-content frames-section">
+            <div class="tabs">
+
+                <!--ACUVUE SECTION-->
+                <input type="radio" class="tab-radio" name="brand" id="acuvue" checked>
+                <label for="acuvue" class="tab-label">Acuvue</label>
+                <div class="tab-content grid-frames">
+                    <!--first row for acuvue-->                   
+                    
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/rimlessacu_1_-removebg-preview.png');"></div><p>1 COLOR</p>
+                </div>                 
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/rectanglerimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>                   
+                                   
+                    
+                    <div class="products" data-item="acuvue">
+                        <div class="product_carousel">
+                            <input type="radio" class="product1" name="acuproduct" id="i_1" checked>
+                            <div class="product_carousel_item product_carousel_item-selected" style="background-image:url('images/Acuvue/bondmetalaviatorgold_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product1" name="acuproduct" id="i_2">
+                            <div class="product_carousel_item" style="background-image:url('images/Acuvue/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product1" name="acuproduct" id="i_3">
+                            <div class="product_carousel_item" style="background-image:url('images/Acuvue/brown_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="i_1" style="background-color:#fae98f;"></label>                            
+                                <label for="i_2" style="background-color:#000000;"></label>                            
+                                <label for="i_3" style="background-color:rgb(46, 10, 10);"></label>
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>                    
+                    </div>                   
+                    
+                    
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicaviator_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                  
+
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Bond metal aviator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Rimless</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Rectangle rimless</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Classic aviator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+
+                    
+                    <!--second row for acuvue-->
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicavy_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/classicmetalsqu_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/pearl-embellisheddetail_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/logoplaque_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Half-rim classic aviator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Classic metal square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$133</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Round pearl-embellished detail</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$2,500</span>  <span class="newprice">$2,250</span> <span class="discount">10% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Logo plaqued</a><span class="tooltipText">Click to download product details</span><br><span class="price">$495</span></small></p></div>
+
+
+                    <!--third row for acuvue-->
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/pilotframe_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/cobaltgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue"><div class="imgitem" style="background-image:url('images/Acuvue/lightambergoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="acuvue">
+                        <div class="imgitem" style="background-image:url('images/Acuvue/sparkgoggles_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+                    
+                    
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Pilot</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Cobalt R1</a><span class="tooltipText">Click to download product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Light amber</a><span class="tooltipText">Click to download product details</span><br><span class="price">$120</span></small></p></div>
+                    <div class="description"><p><span class="brand">ACUVUE</span><br><small><a href="">Spark</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                </div>
+                
+
+
+
+                    
+                    
+                   
+
+
+                <!--BALENCIAGA SECTION-->
+                <input type="radio" class="tab-radio" name="brand" id="balenciaga">
+                <label for="balenciaga" class="tab-label">Balenciaga</label>
+                <div class="tab-content grid-frames">
+                    <!--first row for balenciaga-->
+                    <div class="products" data-item="balenciaga">
+                        <div style="background-image:url('images/Balenciaga/roundrimless_1_-removebg-preview.png')" class="imgitem"></div>
+                        <p>1 COLOR</p>                    
+                    </div>
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/rimless__1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/dynasty_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="balproduct1" id="balite_1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/hourglasssunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproduct1" id="balite_2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/white_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balite_1" style="background-color:#000000;"></label>                            
+                                <label for="balite_2" style="background-color:#ffffff;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+
+
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Round rimless</a><span class="tooltipText">Click to download product details</span><br><span class="price">$135.6</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Rimless rectangle</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Silver dynasty</a><span class="tooltipText">Click to download product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Hourglass</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+
+
+
+                    <!--second row for balenciaga-->
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="balproducts4" id="balitem__1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/red-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts4" id="balitem__2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/silverrect_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts4" id="balitem__3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts4" id="balitem__4">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/spikerectsunglasses_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balitem__1" style="background-color:red;"></label>                            
+                                <label for="balitem__2" style="background-color:silver;"></label>                        <label for="balitem__3" style="background-color:#000000;"></label>                            
+                                <label for="balitem__4" style="background-color:rgb(255, 153, 0);"></label>                      
+                                
+                            </div>
+                        </div>
+                        <p>4 COLORS</p>
+                    </div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="balproducts2" id="balitem_1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/monocat2.0sunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts2" id="balitem_2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/monocat2.0_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balitem_1" style="background-color:#000000;"></label>                            
+                                <label for="balitem_2" style="background-color:#ffffff;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="balproducts5" id="balitem___1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/skinxxlcatsunglasses_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts5" id="balitem___2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/blackxxlcat_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="balproducts5" id="balitem___3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/silverxxl_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balitem___1" style="background-color:rgb(255, 133, 153);"></label>                            
+                                <label for="balitem___2" style="background-color:#000;"></label>                    <label for="balitem___3" style="background-color:silver;"></label>                            
+                                            
+                                
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>
+                    </div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="balglassesproduct" id="balglassesi1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/blackgeo_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="balglassesproduct" id="balglassesi2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/oversizedgeometricframe_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balglassesi1" style="background-color:#000000;"></label>                            
+                                <label for="balglassesi2" style="background-color:#ab2020;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>                    
+                    </div>
+
+
+
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Monocat 2.0</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$790</span>  <span class="newprice">$720</span> <span class="discount">$70 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Spiked rectangle</a><span class="tooltipText">Click to download product details</span><br><span class="price">$1025</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Skin xxl cat</a><span class="tooltipText">Click to download product details</span><br><span class="price">$100</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Oversized geometric</a><span class="tooltipText">Click to download product details</span><br><span class="price">$135.6</span></small></p></div>
+
+
+                    <!--third row for balenciaga-->
+                    <div  class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/BBlogocateye_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="balglassesproduct1" id="balglassesite1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/redgeo_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="balglassesproduct1" id="balglassesite2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/yellowgeo_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balglassesite1" style="background-color:#c72020;"></label>                            
+                                <label for="balglassesite2" style="background-color:#edcb34;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="imgitem" style="background-image:url('images/Balenciaga/geo_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="balenciaga">
+                        <div class="product_carousel">
+                            <input type="radio" name="balgogglesproduct" id="balgogglesi1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/huuborangegoggles_1_-removebg-preview.png');"></div>
+                            <input type="radio" name="balgogglesproduct" id="balgogglesi2">
+                            <div class="product_carousel_item" style="background-image:url('images/Balenciaga/thomaslurzgoggles_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="balgogglesi1" style="background-color:#de320f;"></label>                            
+                                <label for="balgogglesi2" style="background-color:#69a4be;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>                    
+                    </div>
+
+
+
+
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">BB logo cat-eye</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Geometric</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Curved geometric</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Lurz goggles</a><span class="tooltipText">Click to download product details</span><br><span class="price">$495</span></small></p></div>
+
+
+
+
+                    <!--fourth row for balenciaga-->
+                    <div class="products" data-item="balenciaga"><div class="imgitem" style="background-image:url('images/Balenciaga/cobaltmirrorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+
+                    <!--fourth row description-->
+                    <div class="description"><p><span class="brand">BALENCIAGA</span><br><small><a href="">Cobalt mirror</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                </div>
+
+
+
+
+
+                <!--RAYBAN SECTION-->
+                <input type="radio" class="tab-radio" name="brand" id="rayban">
+                <label for="rayban" class="tab-label">Rayban</label>
+                <div class="tab-content grid-frames">
+                    <!--first row for rayban-->
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/ovalrimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div  class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/rimlesssqu_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/havanaontransparentbrowntortoise_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/clubmasterclassic_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+
+
+
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Oval rimless</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Square rimless</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Havana tortoise</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Clubmaster classic</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                    
+
+
+                    <!--second row for rayban-->
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/irisoptics_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="rayban">
+                        <div class="imgitem" style="background-image:url('images/Rayban/square19712_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>  
+                    <div class="products" data-item="rayban"><div class="imgitem" style="background-image:url('images/Rayban/ambermirrorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>   
+                    <div class="products" data-item="rayban">
+                        <div class="imgitem" style="background-image:url('images/Rayban/vermillionmirrorgoggles_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>                     
+                
+                
+                
+
+
+
+                    <!--second row description-->                    
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Iris optical</a><span class="tooltipText">Click to download product details</span><br><span class="price">$102</span></small></p></div> 
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Square 1972</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Amber mirror</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">RAYBAN</span><br><small><a href="">Vermillion mirror</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+                </div>
+
+
+
+
+
+                <!--BOTTEGA SECTION-->
+                <input type="radio" class="tab-radio" name="brand" id="bottega">
+                <label for="bottega" class="tab-label">Bottega Veneta</label>
+                <div class="tab-content grid-frames">
+                    <!--first row of bottega-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/rimlessmetal_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega">
+                        <div class="imgitem" style="background-image:url('images/Bottega/silvertrinity_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/acetatesqusunglasses_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="botproducts" id="botit1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/angleacetatepointedcateye_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="botproducts" id="botit2">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/black_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="botproducts" id="botit3">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/brown_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="botproducts" id="botit4">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/havana_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="botit1" style="background-color:#e4b20d;"></label>                            
+                                <label for="botit2" style="background-color:#000000;"></label>                            
+                                <label for="botit3" style="background-color:rgb(46, 10, 10);"></label>
+                                <label for="botit4" style="background-image:linear-gradient(180deg,rgb(46, 10, 10),#fae98f);"></label>
+                            </div>
+                        </div>
+                        <p>4 COLORS</p>
+                    </div>
+                    
+
+
+
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Rimless metal</a><span class="tooltipText">Click to download product details</span><br><span class="price">$495</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Silver trinity</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$870</span>  <span class="newprice">$435</span> <span class="discount">50% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Acetate square</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Acetate pointed cat-eye</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+
+
+
+                    <!--second row for bottega-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/classicwraparound_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="botproducts6" id="botitems___1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/green_1_-removebg-preview.png');"></div> 
+                            <input type="radio" class="product2" name="botproducts6" id="botitems___2">
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/turncateyegreyruthenium_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="botproducts6" id="botitems___3" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Bottega/gold_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="botitems___1" style="background-color:green;"></label>                            
+                                <label for="botitems___2" style="background-color:grey;"></label>                    <label for="botitems___3" style="background-color:rgb(220, 200, 151);"></label>                            
+                                            
+                                
+                            </div>
+                        </div>
+                        <p>3 COLORS</p>
+                    </div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/tortoiseshellroundframe_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/slimsquare_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    
+                    
+
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Classic wraparound</a><span class="tooltipText">Click to download product details</span><br><span class="price">$2155</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Turn cat-eye</a><span class="tooltipText">Click to download product details</span><br><span class="price">$235</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Round tortoise-shell</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Slimsquare</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+
+
+
+                    <!--third row for bottega-->
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/HUUB_Altairgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="bottega"><div class="imgitem" style="background-image:url('images/Bottega/Zone_Vapourgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div></div>
+                    <div></div>
+
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Altair goggles</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$230.5</span>  <span class="newprice">$210.5</span> <span class="discount">$20 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">BOTTEGA VENETA</span><br><small><a href="">Vapour</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                </div>
+
+
+
+
+
+
+                <!--GUCCI SECTION-->
+                <input type="radio" class="tab-radio" name="brand" id="gucci">
+                <label for="gucci" class="tab-label">Gucci</label>
+                <div class="tab-content grid-frames">
+                    <!--first row of gucci-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/goldrimless_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/goldhalfrimrect_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    <div class="products" data-item="gucci"><div  class="imgitem" style="background-image:url('images/Gucci/rimlessrect_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/half-rimaviatormetal-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+
+
+
+                    <!--first row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Gold rimless</a><span class="tooltipText">Click to download product details</span><br><span class="price">$102</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Gold half-rim rectangle</a><span class="tooltipText">Click to download product details</span><br><span class="price">$560</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Rimless rectangle</a><span class="tooltipText">Click to download product details</span><br><span class="price">$660</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Half-rim aviator metal</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+
+
+
+                    <!--second row of gucci-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/geometricsunglasses_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div  class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/diamondgeometric_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="product_carousel">
+                            <input type="radio" class="product2" name="gucciproducts1" id="gucciitem1" checked>
+                            <div class="product_carousel_item" style="background-image:url('images/Gucci/blackacetatesqu_1_-removebg-preview.png');"></div>
+                            <input type="radio" class="product2" name="gucciproducts1" id="gucciitem2">
+                            <div class="product_carousel_item" style="background-image:url('images/Gucci/squareframe_1_-removebg-preview.png');"></div>
+                            <div class="product_carousel_nav">                            
+                                <label for="gucciitem1" style="background-color:#000000;"></label>                            
+                                <label for="gucciitem2" style="background-color:#e9cca4;"></label>                            
+                                
+                            </div>
+                        </div>
+                        <p>2 COLORS</p>
+                    </div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/montaignesquare_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+
+
+
+                    <!--second row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Geometric</a><span class="tooltipText">Click to download product details</span><br><span class="price">$102</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Diamond geometric</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$1560</span>  <span class="newprice">$1,482</span> <span class="discount">5% OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Acetate square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">30Montaigne square</a><span class="tooltipText">Click to download product details</span><br><span class="price">$790</span></small></p></div>
+
+
+
+                    <!--third row for Gucci-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/horsebit_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/logo-plaquearm_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/podium-titanium-goggle-biofuse_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div class="products" data-item="gucci">
+                        <div class="imgitem" style="background-image:url('images/Gucci/F1_COBALT_MIRROR_1600_1_-removebg-preview.png');"></div>
+                        <p>1 COLOR</p>
+                    </div>
+                    
+
+                    <!--third row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Horsebit</a><span class="tooltipText">Click to download product details</span><br><span class="oldprice">$340</span>  <span class="newprice">$290</span> <span class="discount">$50 OFF</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Logo plaque-arm</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Biofuse titanium</a><span class="tooltipText">Click to download product details</span><br><span class="price">$102</span></small></p></div>
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">F1 Cobalt mirror</a><span class="tooltipText">Click to download product details</span><br><span class="price">$58</span></small></p></div> 
+
+
+
+
+                    <!---fourth row for gucci-->
+                    <div class="products" data-item="gucci"><div class="imgitem" style="background-image:url('images/Gucci/Zoggs_Predatorgoggles_1_-removebg-preview.png');"></div><p>1 COLOR</p></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                    <!--fourth row description-->
+                    <div class="description"><p><span class="brand">GUCCI</span><br><small><a href="">Predator</a><span class="tooltipText">Click to download product details</span><br><span class="price">$96</span></small></p></div>
+                </div>
+
+
+                
+
+            </div>
+        </section>
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <template>
+        <div class="products" data-product-template>
+            <div style="background-image:url('');"></div><p class="colour" data-product-colour></p>
+            <div class="description">
+                <p>
+                    <span class="brand" data-product-brand></span><br>
+                    <small><a href="" class="name" data-product-name></a><br>
+                        <span class="price" data-product-price></span>
+                    </small>
+                </p>
+            </div>
+        </div>
+    </template>
+
+    
+</body>
+</html>
